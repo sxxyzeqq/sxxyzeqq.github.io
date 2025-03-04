@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт со звуком</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        #playSound {
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 50%;
+            background-color: #6200ea;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #playSound:hover {
+            background-color: #3700b3;
+        }
+    </style>
 </head>
 <body>
-    <button id="playSound">ЖМИ</button>
+    <button id="playSound">▶️</button>
     
-    <audio id="sound" src="saloo.mp3"></audio>
+    <audio id="sound" src="path_to_your_sound_file.mp3"></audio>
 
     <script>
         document.getElementById("playSound").addEventListener("click", function() {
