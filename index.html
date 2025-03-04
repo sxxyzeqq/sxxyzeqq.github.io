@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт со звуком</title>
+    <title>Пранк</title>
     <style>
         body {
             display: flex;
@@ -36,7 +36,9 @@
 
     <script>
         document.getElementById("playSound").addEventListener("click", function() {
-            document.getElementById("sound").play();
+            const sound = document.getElementById("sound");
+            sound.currentTime = 0; // Сброс времени воспроизведения
+            sound.play(); // Проигрывание звука
         });
     </script>
 </body>
